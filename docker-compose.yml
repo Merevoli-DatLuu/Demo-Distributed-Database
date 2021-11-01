@@ -1,0 +1,43 @@
+version: "3.7"
+services:
+  db_1:
+    container_name: database-1
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    networks:
+      - ddb_net
+    ports:
+      - "15111:1433"
+    environment:
+      SA_PASSWORD: "Testing1234"
+      ACCEPT_EULA: "Y"
+      MSSQL_AGENT_ENABLED: "True"
+      MSSQL_PID: "Enterprise"
+
+  db_2:
+    container_name: database-2
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    networks:
+      - ddb_net
+    ports:
+      - "15112:1433"
+    environment:
+      SA_PASSWORD: "Testing1234"
+      ACCEPT_EULA: "Y"
+      MSSQL_AGENT_ENABLED: "True"
+      MSSQL_PID: "Enterprise"
+
+  db_3:
+    container_name: database-3
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    networks:
+      - ddb_net
+    ports:
+      - "15113:1433"
+    environment:
+      SA_PASSWORD: "Testing1234"
+      ACCEPT_EULA: "Y"
+      MSSQL_AGENT_ENABLED: "True"
+      MSSQL_PID: "Enterprise"
+
+networks:
+  ddb_net: null

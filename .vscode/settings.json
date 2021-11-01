@@ -1,0 +1,80 @@
+{
+    "sqltools.connections": [
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 15111,
+            "driver": "MSSQL",
+            "name": "server_1_sale",
+            "password": "Testing1234",
+            "username": "SA",
+            "database": "Sales"
+        },
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true,
+                "instanceName": "Testing1234"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 15112,
+            "driver": "MSSQL",
+            "name": "server_2_sale",
+            "database": "Sales",
+            "username": "SA",
+            "password": "Testing1234"
+        },
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 15111,
+            "driver": "MSSQL",
+            "name": "server_1_master",
+            "database": "master",
+            "username": "SA",
+            "password": "Testing1234"
+        },
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 15111,
+            "driver": "MSSQL",
+            "name": "server_1_msdb",
+            "database": "msdb",
+            "username": "SA",
+            "password": "Testing1234"
+        },
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 15111,
+            "driver": "MSSQL",
+            "name": "server_1_qlvattu",
+            "database": "QL_VATTU",
+            "username": "SA",
+            "password": "Testing1234"
+        }
+    ]
+}
